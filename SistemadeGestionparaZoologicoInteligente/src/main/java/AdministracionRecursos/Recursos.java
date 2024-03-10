@@ -13,6 +13,10 @@ public class Recursos {
         public String getNombre() {
             return nombre;
         }
+
+        public int getCantidad() {
+            return cantidad;
+        }
     }
 
     public static class Medicina {
@@ -27,6 +31,10 @@ public class Recursos {
         public String getNombre() {
             return nombre;
         }
+
+        public int getCantidad() {
+            return cantidad;
+        }
     }
 
     public static class Equipamiento {
@@ -40,6 +48,10 @@ public class Recursos {
 
         public String getNombre() {
             return nombre;
+        }
+
+        public int getCantidad() {
+            return cantidad;
         }
     }
 }

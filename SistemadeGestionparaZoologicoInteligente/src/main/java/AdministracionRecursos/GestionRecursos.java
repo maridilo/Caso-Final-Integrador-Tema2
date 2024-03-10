@@ -1,4 +1,5 @@
 package AdministracionRecursos;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -23,6 +24,18 @@ import java.util.Map;
 
         public void agregarEquipamiento(Recursos.Equipamiento equipamiento) {
             inventarioEquipamiento.put(equipamiento.getNombre(), equipamiento);
+        }
+
+        public Map<String, Recursos.Alimento> getInventarioAlimentos() {
+            return Collections.unmodifiableMap(inventarioAlimentos);
+        }
+
+        public Map<String, Recursos.Medicina> getInventarioMedicinas() {
+            return Collections.unmodifiableMap(inventarioMedicinas);
+        }
+
+        public Map<String, Recursos.Equipamiento> getInventarioEquipamiento() {
+            return Collections.unmodifiableMap(inventarioEquipamiento);
         }
     }
 
