@@ -12,11 +12,6 @@ public class Mantenimiento {
     public String getTarea() {
         return tarea;
     }
-
-    public void setTarea(String tarea) {
-        this.tarea = tarea;
-    }
-
     public boolean isEsUrgente() {
         return esUrgente;
     }

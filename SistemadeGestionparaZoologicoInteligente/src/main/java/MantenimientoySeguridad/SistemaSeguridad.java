@@ -52,4 +52,17 @@ public class SistemaSeguridad {
 
         System.out.println("Monitoreo de movimientos completado.");
     }
+
+    public void mostrarEventos() {
+        System.out.println("Mostrando eventos...");
+
+        // Simulación de eventos
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        System.out.println("Eventos mostrados.");
+    }
 }

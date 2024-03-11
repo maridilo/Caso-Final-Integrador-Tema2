@@ -96,4 +96,11 @@ public void mostrarTareasPorIndice(int index) {
             }
         }
     }
+
+    public void mostrarTareasProgramadas() {
+        System.out.println("Tareas programadas:");
+        tareasPendientes.forEach(mantenimiento -> {
+            System.out.println("Tarea: " + mantenimiento.getTarea() + ", Urgente: " + mantenimiento.isEsUrgente());
+        });
+    }
 }
